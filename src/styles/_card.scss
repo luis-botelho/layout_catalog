@@ -65,6 +65,11 @@
     font-weight: 700;
     line-height: 18px;
     color: $primary-text-color;
+
+    &::before {
+      display: none !important;
+      content: '';
+    }
   }
 
   &__button {
