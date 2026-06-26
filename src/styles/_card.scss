@@ -65,10 +65,17 @@
     font-weight: 700;
     line-height: 18px;
     color: $primary-text-color;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 
-    &::before {
+    /* Remove any label inserted via pseudo-elements */
+    &::before,
+    &::after,
+    *::before,
+    *::after {
+      content: none !important;
       display: none !important;
-      content: '';
     }
   }
 
